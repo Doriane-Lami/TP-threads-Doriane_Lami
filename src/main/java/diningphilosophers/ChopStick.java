@@ -6,6 +6,7 @@ public class ChopStick {
     private boolean iAmFree = true;
     private final int myNumber;
 
+
     public ChopStick() {
         myNumber = ++stickCount;
     }
