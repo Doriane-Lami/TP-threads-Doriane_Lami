@@ -55,7 +55,7 @@ public class Philosopher
 
     private boolean tryTakeStick(ChopStick stick) throws InterruptedException {
         int delay = myRandom.nextInt(100 + DELAY);
-        boolean result = stick.tryTake(delay);
+        boolean result = stick.tryTake();
         if (result) {
             System.out.println(myName + " took " + stick + " before " + delay + " ms");
         } else {
